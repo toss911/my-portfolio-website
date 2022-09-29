@@ -1,0 +1,150 @@
+nav {
+  width: 100%;
+  height: 700px;
+  position: relative;
+}
+
+nav #header-bg {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 95%;
+  z-index: -1;
+}
+
+nav .hollow-circle-1 {
+  position: absolute;
+  border: 80px solid var(--tertiary-color);
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 1000px;
+  width: 1000px;
+  top: 200px;
+  left: 60%;
+  z-index: -1;
+}
+
+nav .hollow-circle-2 {
+  position: absolute;
+  border: 80px solid var(--tertiary-color);
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 2000px;
+  width: 100%;
+  top: -200px;
+  left: -45%;
+  z-index: -1;
+}
+
+nav .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--tertiary-color);
+  padding: 2em 2em 0 2em;
+}
+
+nav .navbar .website-logo {
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+}
+
+nav .navbar .menu {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+}
+
+nav .navbar .menu a:not(:first-of-type) {
+  margin-left: 30px;
+}
+
+nav .navbar .menu a:not(:last-of-type):hover {
+  opacity: 0.5;
+}
+
+nav .navbar .menu a:not(:last-of-type):focus {
+  font-weight: bold;
+}
+
+nav .navbar .menu a:last-of-type:hover {
+  border: solid #acacac;
+  background-color: #acacac;
+  font-weight: bold;
+}
+
+nav .navbar .menu a:last-of-type {
+  padding: 10px 32px;
+  border: solid var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 50px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  color: var(--primary-color);
+}
+
+nav .hero {
+  color: var(--tertiary-color);
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .hero .hero-title {
+  width: 30vw;
+  margin-top: 100px;
+}
+
+nav .hero .hero-title .name-introduction {
+  font-size: 28px;
+}
+
+nav .hero .hero-title .current-role {
+  font-size: 32px;
+  font-weight: bold;
+}
+
+nav .hero .hero-title .self-summary {
+  font-size: 18px;
+}
+
+nav .hero .hero-title .button {
+  display: flex;
+  margin-top: 32px;
+  font-size: 20px;
+  text-align: center;
+}
+
+nav .hero .hero-title .button a:first-of-type {
+  display: block;
+  padding: 10px 32px;
+  border: solid var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  border-radius: 50px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  color: var(--primary-color);
+}
+
+nav .hero .hero-title .button a:first-of-type:hover {
+  border: solid #acacac;
+  background-color: #acacac;
+  font-weight: bold;
+}
+
+nav .hero .hero-title .button a:not(:first-of-type) {
+  display: block;
+  margin-left: 24px;
+  padding: 10px 32px;
+  border: solid 3px;
+  border-radius: 50px;
+  filter: drop-shadow(0px 4px 18px rgba(0, 0, 0, 0.25));
+}
+
+nav .hero .hero-title .button a:not(:first-of-type):hover {
+  border: solid var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+nav .hero .hero-image img {
+  display: block;
+}
