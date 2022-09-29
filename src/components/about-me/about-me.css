@@ -28,12 +28,14 @@ section.about-me .infographic .hollow-circle .rectangular {
   font-size: 14px;
   font-weight: bold;
   color: var(--primary-color);
+  width: 150px;
+  height: 150px;
 }
 
 section.about-me .infographic .hollow-circle .rectangular:first-child {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  /* width: 150px;
+  height: 150px; */
   background-color: #f2f2f2;
   border-radius: 16px;
   top: -90px;
@@ -43,8 +45,8 @@ section.about-me .infographic .hollow-circle .rectangular:first-child {
 
 section.about-me .infographic .hollow-circle .rectangular:nth-child(2) {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  /* width: 150px;
+  height: 150px; */
   background-color: #f2f2f2;
   border-radius: 16px;
   top: -120px;
@@ -54,8 +56,8 @@ section.about-me .infographic .hollow-circle .rectangular:nth-child(2) {
 
 section.about-me .infographic .hollow-circle .rectangular:nth-child(3) {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  /* width: 150px;
+  height: 150px; */
   background-color: #f2f2f2;
   border-radius: 16px;
   bottom: -50px;
@@ -64,8 +66,8 @@ section.about-me .infographic .hollow-circle .rectangular:nth-child(3) {
 }
 section.about-me .infographic .hollow-circle .rectangular:last-child {
   position: absolute;
-  width: 150px;
-  height: 150px;
+  /* width: 150px;
+  height: 150px; */
   background-color: #f2f2f2;
   border-radius: 16px;
   bottom: -70px;
@@ -125,4 +127,59 @@ section.about-me .content .hobby-list div p {
   font-size: 18px;
   font-weight: bold;
   color: #5f5e79;
+}
+
+@media only screen and (max-width: 1200px) {
+  section.about-me > .icon {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.about-me {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  section.about-me .infographic {
+    width: 100%;
+    margin-top: 80px;
+  }
+
+  section.about-me .infographic .hollow-circle {
+    width: 200px;
+    height: 200px;
+  }
+
+  section.about-me .infographic .hollow-circle .rectangular {
+    width: 125px;
+    height: 125px;
+    text-align: center;
+  }
+
+  section.about-me .infographic .hollow-circle .rectangular:nth-child(2) {
+    top: -100px;
+  }
+
+  section.about-me .infographic .hollow-circle .rectangular:nth-child(3) {
+    right: -80px;
+  }
+
+  section.about-me .content {
+    width: 80%;
+  }
+
+  section.about-me .content > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  section.about-me .content .content-name {
+    margin-top: 100px;
+  }
+
+  section.about-me .content .current-role {
+    text-align: center;
+  }
 }

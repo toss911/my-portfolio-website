@@ -1,0 +1,12 @@
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a8597;
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+  color: var(--tertiary-color);
+}

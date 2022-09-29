@@ -2,6 +2,7 @@ nav {
   width: 100%;
   height: 700px;
   position: relative;
+  overflow: hidden;
 }
 
 nav #header-bg {
@@ -65,7 +66,7 @@ nav .navbar .menu a:not(:last-of-type):hover {
 
 nav .navbar .menu a:not(:last-of-type):focus {
   font-weight: bold;
-  opacity: 0.8;
+  opacity: 1;
 }
 
 nav .navbar .menu a:last-of-type:hover {
@@ -73,6 +74,7 @@ nav .navbar .menu a:last-of-type:hover {
   background-color: #acacac;
   font-weight: bold;
 }
+
 nav .navbar .menu a:last-of-type:focus {
   border: solid var(--tertiary-color);
   background-color: #acacac;
@@ -96,7 +98,7 @@ nav .hero {
 }
 
 nav .hero .hero-title {
-  width: 30vw;
+  width: 30%;
   margin-top: 100px;
 }
 
@@ -136,6 +138,13 @@ nav .hero .hero-title .button a:first-of-type:hover {
   font-weight: bold;
 }
 
+nav .hero .hero-title .button a:first-of-type:focus {
+  border: solid var(--tertiary-color);
+  background-color: #acacac;
+  font-weight: bold;
+  opacity: 0.5;
+}
+
 nav .hero .hero-title .button a:not(:first-of-type) {
   display: block;
   margin-left: 24px;
@@ -152,6 +161,115 @@ nav .hero .hero-title .button a:not(:first-of-type):hover {
   font-weight: bold;
 }
 
+nav .hero .hero-title .button a:not(:first-of-type):focus {
+  border: solid var(--tertiary-color);
+  background-color: var(--tertiary-color);
+  color: var(--primary-color);
+  font-weight: bold;
+  opacity: 0.5;
+}
+
 nav .hero .hero-image img {
   display: block;
+}
+
+nav .navbar .menu-hamburger {
+  display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+  nav .hero .hero-image {
+    display: none;
+  }
+
+  nav .hero .hero-title {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  nav .hero .hero-title .name-introduction {
+    text-align: center;
+  }
+
+  nav .hero .hero-title .current-role {
+    text-align: center;
+  }
+
+  nav .hero .hero-title .self-summary {
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  nav .navbar .menu {
+    display: none;
+  }
+  nav .navbar .menu-hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: relative;
+  }
+
+  nav .navbar .menu-hamburger img {
+    display: block;
+  }
+
+  nav .navbar .menu-hamburger img:hover {
+    opacity: 0.4;
+    cursor: pointer;
+  }
+
+  nav .navbar .menu-hamburger img:active {
+    opacity: 0.9;
+  }
+
+  nav .navbar .menu-hamburger .menu-list {
+    position: absolute;
+    width: 200px;
+    top: 60px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--tertiary-color);
+    border-radius: 16px;
+  }
+
+  nav .navbar .menu-hamburger .menu-list a {
+    width: 100%;
+    font-size: 22px;
+    padding: 10px;
+    color: var(--primary-color);
+    text-align: center;
+  }
+
+  nav .navbar .menu-hamburger .menu-list a:hover {
+    background-color: rgba(161, 161, 161, 0.378);
+  }
+
+  nav .navbar .menu-hamburger .menu-list a:focus {
+    background-color: rgba(161, 161, 161, 0.816);
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  nav .hero .hero-title .name-introduction {
+    font-size: 24px;
+  }
+
+  nav .hero .hero-title .current-role {
+    font-size: 28px;
+  }
+
+  nav .hero .hero-title .self-summary {
+    font-size: 16px;
+  }
+
+  nav .hero .hero-title .button {
+    font-size: 18px;
+  }
 }

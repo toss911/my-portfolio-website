@@ -126,3 +126,30 @@ section.my-portfolio .portfolio-list .portfolio .webpage-example img {
   border-radius: 16px;
   box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
 }
+
+@media only screen and (max-width: 1200px) {
+  section.my-portfolio .portfolio-list {
+    padding: 0 50px 0 50px;
+  }
+  section.my-portfolio .portfolio-list .portfolio {
+    width: 45%;
+  }
+
+  section.my-portfolio .portfolio-list .portfolio:last-child {
+    margin-top: 25px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.my-portfolio .portfolio-list {
+    padding: 0;
+  }
+
+  section.my-portfolio .portfolio-list .portfolio {
+    width: 70%;
+  }
+
+  section.my-portfolio .portfolio-list .portfolio:not(:first-child) {
+    margin-top: 25px;
+  }
+}

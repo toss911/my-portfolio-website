@@ -1,6 +1,12 @@
 import "./navbar.css";
+import { useState } from "react";
 
 export const Navbar = () => {
+  const [isToggle, setIsToggle] = useState(false);
+  const toggle = () => {
+    setIsToggle(!isToggle);
+  };
+
   return (
     <nav>
       <img
@@ -18,6 +24,21 @@ export const Navbar = () => {
           <a href="#my-portfolio-section">Portfolio</a>
           <a href="#contact-me-section">Contact</a>
         </div>
+        <div className="menu-hamburger">
+          <img
+            src="images/header/menu-icon.svg"
+            width="60px"
+            onClick={() => toggle()}
+          />
+          {isToggle ? (
+            <div className="menu-list">
+              <a href="#about-me-section">About</a>
+              <a href="#my-skills-section">Skills</a>
+              <a href="#my-portfolio-section">Portfolio</a>
+              <a href="#contact-me-section">Contact</a>
+            </div>
+          ) : null}
+        </div>
       </div>
       <div className="hero">
         <div className="hero-title">
@@ -29,8 +50,8 @@ export const Navbar = () => {
             full-time role in the field of software development
           </p>
           <div className="button">
-            <a>Send message</a>
-            <a>Get Resume</a>
+            <a href="#send-message-form">Send message</a>
+            <a href="https://www.google.co.th/">Download Resume</a>
           </div>
         </div>
         <div className="hero-image">

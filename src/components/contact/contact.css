@@ -23,3 +23,200 @@ section.contact-me .content-title div:last-child {
   color: var(--primary-color);
   font-weight: bold;
 }
+
+section.contact-me .contact {
+  width: 100%;
+  display: flex;
+  margin-top: 60px;
+}
+
+section.contact-me .contact > div:first-of-type {
+  width: 50%;
+}
+
+section.contact-me .contact > div:last-of-type {
+  width: 50%;
+}
+
+section.contact-me .contact .contact-info {
+  background-image: linear-gradient(
+    to right bottom,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: 0px 20px 20px 0px;
+  color: var(--tertiary-color);
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.contact-info .circle-1 {
+  position: absolute;
+  border: 50px solid var(--tertiary-color);
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 500px;
+  width: 500px;
+  top: 0px;
+  left: -20%;
+  z-index: 0;
+}
+
+.contact-info .circle-2 {
+  position: absolute;
+  border: 50px solid var(--tertiary-color);
+  opacity: 0.2;
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  top: 30px;
+  right: -15%;
+  z-index: 0;
+}
+
+.contact-info-header {
+  font-size: 28px;
+  margin: 20px 0 20px 0;
+  z-index: 1;
+}
+
+.contact-intro {
+  margin-bottom: 30px;
+  z-index: 1;
+}
+
+.contact-name,
+.contact-number,
+.contact-email {
+  display: flex;
+  z-index: 1;
+}
+
+.contact .icon {
+  margin-right: 16px;
+}
+
+.contact-social-network {
+  margin-top: 30px;
+  display: flex;
+  z-index: 1;
+}
+
+.contact-social-network > div:not(:first-of-type) {
+  margin-left: 50px;
+}
+
+.contact-social-network > div:hover {
+  opacity: 0.4;
+}
+
+.contact-social-network > div:active {
+  opacity: 1;
+}
+
+.contact-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form form {
+  width: 80%;
+}
+
+.contact-form label,
+.contact-form input {
+  display: block;
+}
+
+.contact-form label {
+  font-size: 24px;
+}
+
+.contact-form input {
+  all: unset;
+  font-size: 20px;
+  border-bottom: 1.5px grey solid;
+  margin-bottom: 20px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.contact-form input:hover {
+  border-bottom: 1.5px rgb(208, 207, 207) solid;
+}
+
+.contact-form input:focus {
+  border-bottom: 1.5px var(--secondary-color) solid;
+}
+
+.contact-form button {
+  all: unset;
+  margin-top: 15px;
+  padding: 10px 32px;
+  border: solid var(--primary-color);
+  background-color: var(--primary-color);
+  border-radius: 50px;
+  box-shadow: 0px 4px 18px rgba(0, 0, 0, 0.25);
+  color: var(--tertiary-color);
+}
+
+.contact-form button:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.contact-form button:focus {
+  border: solid var(--primary-color);
+  background-color: var(--primary-color);
+  font-weight: bold;
+  opacity: 0.9;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-info .circle-2 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .contact-info .circle-2 {
+    display: block;
+  }
+  section.contact-me .contact {
+    flex-direction: column-reverse;
+  }
+
+  section.contact-me .contact > div:first-of-type {
+    width: 100%;
+  }
+
+  section.contact-me .contact > div:last-of-type {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+
+  .contact-form form {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .contact-form form > div {
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form button {
+    width: 30%;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-info .circle-2 {
+    display: none;
+  }
+}
