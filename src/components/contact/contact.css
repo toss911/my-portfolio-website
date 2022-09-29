@@ -1,0 +1,25 @@
+section.contact-me {
+  width: 100%;
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section.contact-me .content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.contact-me .content-title div:first-child {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+section.contact-me .content-title div:last-child {
+  font-size: 36px;
+  color: var(--primary-color);
+  font-weight: bold;
+}

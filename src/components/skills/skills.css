@@ -2,5 +2,79 @@ section.my-skills {
   width: 100%;
   margin-top: 70px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
+}
+
+section.my-skills .content-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section.my-skills .content-title div:first-child {
+  font-size: 24px;
+  color: var(--secondary-color);
+}
+
+section.my-skills .content-title div:last-child {
+  font-size: 36px;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+section.my-skills .skills-list {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 60px;
+  padding: 0 150px 0 150px;
+}
+
+section.my-skills .skills-list .skill {
+  width: 30%;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* border: 3px solid blue; */
+  /* border-radius: 50% 50% 0 0;
+  background-color: #f2f2f2; */
+}
+
+section.my-skills .skills-list .skill .skill-name {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+section.my-skills .skills-list .skill .skill-logo img {
+  width: 120px;
+}
+
+section.my-skills
+  .skills-list
+  .skill:last-of-type
+  .skill-logo
+  img:last-of-type {
+  width: 60px;
+}
+
+section.my-skills
+  .skills-list
+  .skill:nth-child(3)
+  .skill-logo
+  img:last-of-type {
+  margin-left: 30px;
+}
+
+section.my-skills
+  .skills-list
+  .skill:nth-child(6)
+  .skill-logo
+  img:last-of-type {
+  margin-left: 30px;
 }

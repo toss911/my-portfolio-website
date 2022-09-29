@@ -14,9 +14,9 @@ export const Navbar = () => {
         <p className="website-logo">Tossaporn</p>
         <div className="menu">
           <a href="#about-me-section">About</a>
-          <a>Skills</a>
-          <a>Portfolio</a>
-          <a>Contact</a>
+          <a href="#my-skills-section">Skills</a>
+          <a href="#my-portfolio-section">Portfolio</a>
+          <a href="#contact-me-section">Contact</a>
         </div>
       </div>
       <div className="hero">

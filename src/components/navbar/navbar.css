@@ -60,17 +60,24 @@ nav .navbar .menu a:not(:first-of-type) {
 }
 
 nav .navbar .menu a:not(:last-of-type):hover {
-  opacity: 0.5;
+  opacity: 0.4;
 }
 
 nav .navbar .menu a:not(:last-of-type):focus {
   font-weight: bold;
+  opacity: 0.8;
 }
 
 nav .navbar .menu a:last-of-type:hover {
   border: solid #acacac;
   background-color: #acacac;
   font-weight: bold;
+}
+nav .navbar .menu a:last-of-type:focus {
+  border: solid var(--tertiary-color);
+  background-color: #acacac;
+  font-weight: bold;
+  opacity: 0.5;
 }
 
 nav .navbar .menu a:last-of-type {
